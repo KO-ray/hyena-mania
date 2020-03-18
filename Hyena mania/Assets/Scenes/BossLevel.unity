@@ -2837,6 +2837,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Matriarch
       objectReference: {fileID: 0}
+    - target: {fileID: 3079753606795099658, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126439558045108136, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536408497191803405, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
 --- !u!1001 &7101056724242527079

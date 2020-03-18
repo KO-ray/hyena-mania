@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shootable
   - Tower
+  - Enemy
   layers:
   - Default
   - TransparentFX

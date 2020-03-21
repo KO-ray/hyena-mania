@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 1577601706960408319}
   - component: {fileID: 1565303181752238056}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,3 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   range: 20
+  shoot: {x: 0, y: 0, z: 1}
+  coolDown: 5
+  currentCoolDown: 0
+  shootSpeed: 200
+  rock: {fileID: 1912476529740974898, guid: b5b9c06da9b3cc24a8ae2f4a8e35dbb4, type: 3}

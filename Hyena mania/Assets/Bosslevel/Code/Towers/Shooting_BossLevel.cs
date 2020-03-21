@@ -7,31 +7,48 @@ public class Shooting_BossLevel : MonoBehaviour
     public GameObject enemy;
     public float range;
     private float distanceToEnemy;
-    public Vector3 loc;
-    public float coolDown;
 
+    public Vector3 shoot;
+
+    public float coolDown;
+    public float currentCoolDown;
+
+    public float shootSpeed;
     public GameObject rock;
+
+    bool isShot;
+    bool canSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
-       enemy = GameObject.FindGameObjectWithTag("Enemy");
+        canSpawn = false;
+        enemy = GameObject.FindGameObjectWithTag("Enemy");
+       
+        isShot = false;
 
-        InvokeRepeating("ShootRock",2,coolDown);
-
+        currentCoolDown = coolDown; 
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        currentCoolDown -= Time.deltaTime;
+
         distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
 
-        transform.LookAt(enemy.transform);
-
-        if (distanceToEnemy <= range)
+        if (distanceToEnemy <= range && canSpawn) 
         {
+           
             ShootRock();
+            canSpawn = false;
+        }
+        if (currentCoolDown <= 0)
+        {
+            
+            currentCoolDown = coolDown;
+            canSpawn = true;
         }
     }
     private void OnDrawGizmosSelected()
@@ -43,17 +60,24 @@ public class Shooting_BossLevel : MonoBehaviour
     void ShootRock()
     {
         //instantiate rock
-        Instantiate(rock, loc, Quaternion.identity);
+        GameObject currentRock = Instantiate(rock, transform.position, Quaternion.identity);
         //look at enemy
-        transform.LookAt(enemy.transform);
+        // currentRock.transform.LookAt(enemy.transform);
         //translate to shoot object
-
-        //MAKE ROCK TRIGGER
+        //currentRock.transform.Translate(shoot * Time.deltaTime * shootSpeed);
+        isShot = true;
 
     }
    void OnTriggerEnter(Collider other)
     {
         //check bool
+        if (isShot)
+        {
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                Debug.Log("BULLSEYE");         
+            }
+        }
         //DoDamage
     }
 }

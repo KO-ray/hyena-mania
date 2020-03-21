@@ -7,12 +7,18 @@ public class Shooting_BossLevel : MonoBehaviour
     public GameObject enemy;
     public float range;
     private float distanceToEnemy;
+    public Vector3 loc;
+    public float coolDown;
+
+    public GameObject rock;
 
     // Start is called before the first frame update
     void Start()
     {
        enemy = GameObject.FindGameObjectWithTag("Enemy");
-       
+
+        InvokeRepeating("ShootRock",2,coolDown);
+
 
     }
 
@@ -37,10 +43,13 @@ public class Shooting_BossLevel : MonoBehaviour
     void ShootRock()
     {
         //instantiate rock
+        Instantiate(rock, loc, Quaternion.identity);
         //look at enemy
+        transform.LookAt(enemy.transform);
         //translate to shoot object
+
         //MAKE ROCK TRIGGER
-        
+
     }
    void OnTriggerEnter(Collider other)
     {

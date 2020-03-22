@@ -5,7 +5,7 @@ using UnityEngine;
 public class ROCK : MonoBehaviour
 {
     
-    bool isShot;
+    //bool isShot;
     public GameObject enemy;
     public float shootSpeed;
     public Vector3 shoot;
@@ -20,7 +20,7 @@ public class ROCK : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //look at enemy
+        
        
         //translate to shoot object
         transform.Translate(shoot* shootSpeed * Time.deltaTime);

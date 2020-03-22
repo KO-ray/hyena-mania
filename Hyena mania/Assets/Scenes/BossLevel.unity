@@ -2584,6 +2584,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836340556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8536408497191803405, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6111093387778260328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1836340559
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836340556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 0b80be81dabcc9e46b8dc178b1882f91, type: 3}
 --- !u!4 &2049050933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8839134523272360931, guid: 07abd699e30c30f499500658b33dfa59,
@@ -2842,6 +2862,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 4669019506208404404, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111093387508436540, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111093387508436540, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111093387508436540, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6126439558045108136, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
         type: 3}
       propertyPath: m_TagString
@@ -2850,9 +2890,11 @@ PrefabInstance:
     - target: {fileID: 8536408497191803405, guid: 09be808ec1a0d9746b7c39ca4c501b3d,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6111093387508436519, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
+    - {fileID: 6111093387508436540, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
 --- !u!1001 &7101056724242527079
 PrefabInstance:

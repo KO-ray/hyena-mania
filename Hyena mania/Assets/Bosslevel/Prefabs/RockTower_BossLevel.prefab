@@ -129,4 +129,4 @@ MonoBehaviour:
   coolDown: 5
   currentCoolDown: 0
   shootSpeed: 200
-  rock: {fileID: 1912476529740974898, guid: b5b9c06da9b3cc24a8ae2f4a8e35dbb4, type: 3}
+  rock: {fileID: 763002672213651432, guid: f7148cc2b338fd44aa03d8d894c9d914, type: 3}

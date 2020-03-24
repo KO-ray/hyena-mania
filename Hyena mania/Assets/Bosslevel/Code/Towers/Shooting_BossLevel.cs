@@ -73,10 +73,7 @@ public class Shooting_BossLevel : MonoBehaviour
         //check bool
         if (isShot)
         {
-            if (other.gameObject.CompareTag("Enemy"))
-            {
-                Debug.Log("BULLSEYE");         
-            }
+           
         }
         //DoDamage
     }

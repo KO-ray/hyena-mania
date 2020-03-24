@@ -14,14 +14,14 @@ public class ROCK : MonoBehaviour
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         //Offset
-        transform.LookAt(enemy.transform);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-       
+
+        transform.LookAt(enemy.transform);
         //translate to shoot object
         transform.Translate(shoot* shootSpeed * Time.deltaTime);
        

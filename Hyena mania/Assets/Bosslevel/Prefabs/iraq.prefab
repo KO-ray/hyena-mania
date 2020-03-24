@@ -108,5 +108,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
-  shootSpeed: 20
+  shootSpeed: 30
   shoot: {x: 0, y: 0, z: 1}

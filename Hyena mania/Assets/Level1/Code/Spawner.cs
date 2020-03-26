@@ -15,6 +15,8 @@ public class Spawner : MonoBehaviour
     {
         counter -= Time.deltaTime;
 
+        WaveCountdownText.text = Mathf.Floor(counter).ToString();
+
         if (counter <= 0f)
         {
             coolDown ++;

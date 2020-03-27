@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7832398615311551288}
   - component: {fileID: 4579822591155632065}
   - component: {fileID: 4618633776075566771}
-  - component: {fileID: 8033444174033529828}
   m_Layer: 0
   m_Name: RockTower_BossLevel
   m_TagString: Tower
@@ -95,22 +94,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.13273418
   m_Center: {x: 0.0026542027, y: -0.0015016556, z: 0.028797353}
---- !u!114 &8033444174033529828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2860377769017197341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4046f2b2219c25647bea7c0150584e71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  rock: {fileID: 763002672213651432, guid: f7148cc2b338fd44aa03d8d894c9d914, type: 3}
-  cooldown: 4
-  currentCooldown: 0
 --- !u!1 &4701665206711343024
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577601706960408319}
+  - component: {fileID: 2677452651078066930}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -141,3 +125,21 @@ Transform:
   m_Father: {fileID: 1290637216680718606}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2677452651078066930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4701665206711343024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4357c61c7ea705b4d862d6bf3bcfbc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2877547380705055037, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
+  range: 25
+  shoot: {x: 0, y: 0, z: 0}
+  coolDown: 4
+  currentCoolDown: 0
+  rock: {fileID: 763002672213651432, guid: f7148cc2b338fd44aa03d8d894c9d914, type: 3}

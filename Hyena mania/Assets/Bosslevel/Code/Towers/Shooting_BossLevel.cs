@@ -13,10 +13,10 @@ public class Shooting_BossLevel : MonoBehaviour
     public float coolDown;
     public float currentCoolDown;
 
-    public float shootSpeed;
+   
     public GameObject rock;
 
-    bool isShot;
+    
     bool canSpawn;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class Shooting_BossLevel : MonoBehaviour
         canSpawn = false;
         enemy = GameObject.FindGameObjectWithTag("Enemy");
        
-        isShot = false;
+       
 
         currentCoolDown = coolDown; 
 
@@ -65,16 +65,8 @@ public class Shooting_BossLevel : MonoBehaviour
         // currentRock.transform.LookAt(enemy.transform);
         //translate to shoot object
         //currentRock.transform.Translate(shoot * Time.deltaTime * shootSpeed);
-        isShot = true;
+       
 
     }
-   void OnTriggerEnter(Collider other)
-    {
-        //check bool
-        if (isShot)
-        {
-           
-        }
-        //DoDamage
-    }
+  
 }

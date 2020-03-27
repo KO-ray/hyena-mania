@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4381407857868873211}
   - component: {fileID: 4726217217269442509}
   - component: {fileID: 1345007216543259444}
-  - component: {fileID: 7966049632257355874}
   - component: {fileID: -2868478817358781220}
+  - component: {fileID: 4282824156621131222}
   m_Layer: 0
   m_Name: iraq
   m_TagString: Untagged
@@ -81,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7966049632257355874
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763002672213651432}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 289301614986012343, guid: 2f7b04e8d2d27e2488c074888520680d, type: 3}
 --- !u!114 &-2868478817358781220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +93,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8278a6dc408f24d989a3039e7362c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  shootSpeed: 30
+  enemy: {fileID: 2877547380705055037, guid: 09be808ec1a0d9746b7c39ca4c501b3d, type: 3}
+  shootSpeed: 50
   shoot: {x: 0, y: 0, z: 1}
+--- !u!135 &4282824156621131222
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763002672213651432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.003920919
+  m_Center: {x: 0.00019424318, y: -0.00030264675, z: 0.00006328583}

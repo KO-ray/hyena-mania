@@ -24,6 +24,19 @@ public class ROCK : MonoBehaviour
         transform.LookAt(enemy.transform);
         //translate to shoot object
         transform.Translate(shoot* shootSpeed * Time.deltaTime);
+
        
+    }
+
+    void OnTriggerEnter(Collider rockHit)
+    {
+        if (rockHit.gameObject.CompareTag("Enemy"));
+        {
+            //Do damage 
+            print("hit!");
+
+            Destroy(gameObject);
+        }
+        
     }
 }

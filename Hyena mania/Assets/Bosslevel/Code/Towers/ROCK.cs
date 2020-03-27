@@ -31,9 +31,9 @@ public class ROCK : MonoBehaviour
        
     }
 
-    void OnTriggerEnter(Collider rockHit)
+    void OnTriggerEnter(Collider other)
     {
-        if (rockHit.gameObject.CompareTag("Enemy"));
+        if (other.gameObject.CompareTag("Enemy"))
         {
             //Do damage 
             matriarch.GetComponent<Health_Matriarch>().DoDamg(damage);

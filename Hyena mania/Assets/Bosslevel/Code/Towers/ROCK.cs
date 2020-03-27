@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class ROCK : MonoBehaviour
 {
-    
+
     //bool isShot;
+    public GameObject matriarch;
+    public float damage;
+
     public GameObject enemy;
     public float shootSpeed;
     public Vector3 shoot;
@@ -33,7 +36,7 @@ public class ROCK : MonoBehaviour
         if (rockHit.gameObject.CompareTag("Enemy"));
         {
             //Do damage 
-            print("hit!");
+            matriarch.GetComponent<Health_Matriarch>().DoDamg(damage);
 
             Destroy(gameObject);
         }
